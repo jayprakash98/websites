@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+/* navigation bar */
+#navbar {
+  display: flex;
+  align-items: center;
+  position: relative;
+  /* justify-content: center; */
+}
+
+/* navbar:logo and images */
+#logo {
+  margin: 0px 29px;
+}
+
+#logo img {
+  height: 56px;
+  margin: 3px 5px;
+  border-radius: 7px;
+}
+
+/* navigation bar:list styling */
+
+#navbar ul {
+  display: flex;
+}
+
+#navbar::before {
+  content: "";
+  background-color: black;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  z-index: -1;
+  opacity: 0.4;
+}
+
+#navbar ul li {
+  /* color: white; */
+  list-style: none;
+  font-size: 23px;
+}
+#navbar ul li a {
+  color: white;
+  display: block;
+  padding: 3px 20px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+#navbar ul li a:hover {
+  color: black;
+  background-color: white;
+  top: 0px;
+  left: 0px;
+}
+
+/* home section */
+#home {
+  display: flex;
+  flex-direction: column;
+  padding: 3px 83px;
+  justify-content: center;
+  align-items: center;
+  height: 299px;
+}
+#home::before {
+  content: "";
+  background: url("../img/bg1.jpeg") no-repeat center center/cover;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 87%;
+  width: 100%;
+  z-index: -1;
+  opacity: 1;
+}
+
+#home h1 {
+  color: white;
+  text-align: center;
+}
+#home p {
+  color: white;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+/* utility classes */
+
+.h-primary {
+  font-size: 34px;
+  padding: 12px;
+  color: white;
+}
+
+.h-secondary {
+  font-size: 2.8rem;
+  padding: 12px;
+}
+
+.center {
+  text-align: center;
+}
+
+#services {
+  margin: 34px;
+  display: flex;
+}
+#services .box {
+  border: 2px solid brown;
+  padding: 34px;
+  margin: 3px 6px;
+  border-radius: 28px;
+  background-color: #f1e2e2;
+}
+#services .box img {
+  height: 145px;
+  display: block;
+  border-radius: 10px;
+
+  /* margin auto bring elment into the center but it is possible only when element is block 
+  element */
+  margin: auto;
+}
+
+#services {
+}
+
+.btn {
+  border: 2px solid white;
+  padding: 5px 20px;
+  background-color: pink;
+  border-radius: 20px;
+  margin: 20px;
+  font-size: 15px;
+  cursor: pointer;
+}
